@@ -29,12 +29,12 @@ namespace MasterPol
 
         private void EditBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AddEditPage((sender as Button).DataContext as Partner));
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            Manager.MainFrame.Navigate(new AddEditPage(null));
         }
     }
 }
